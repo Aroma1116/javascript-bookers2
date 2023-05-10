@@ -28,11 +28,12 @@
           </tr>
         </tbody>
       </table>
-      <table>
-        <%= alert %>
+      <div id="comment-area">
         <%= render 'book_comments/book_comment', book: @book %>
-      </table>
-      <%= render 'book_comments/form', {book: @book,book_comment: @book_comment} %>
+      </div>
+      <div class="new-comment">
+        <%= render 'book_comments/form', {book: @book,book_comment: @book_comment} %>
+      </div>
     </div>
   </div>
 </div>
